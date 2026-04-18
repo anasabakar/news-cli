@@ -83,7 +83,3 @@ Respect each site’s terms, `robots.txt`, and rate limits. For **Hacker News**,
 
 - [ROADMAP.md](ROADMAP.md) — how we add sources and evolve the tool  
 - [CONTRIBUTING.md](CONTRIBUTING.md) — how to add a new source and open a PR
-
-## License
-
-Add a `LICENSE` file when you publish (for example MIT).
