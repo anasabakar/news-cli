@@ -13,7 +13,7 @@ We expect to **add new outlets over time**—each release may ship more `sources
 3. Update the **Supported sources** table in [README.md](README.md).
 4. Prefer **documented APIs or RSS** when possible; if you rely on HTML scraping, note breakage risk in the module docstring.
 
-**Users:** run `news --list-sources` to see which sources your installed version supports—do not rely only on static docs.
+**Users:** run `cli-news --list-sources` to see which sources your installed version supports—do not rely only on static docs.
 
 ## Near term (0.x)
 

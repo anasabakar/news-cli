@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "news-cli"
-version = "0.3.0"
+version = "0.3.1"
 description = "Search multiple news sources and read articles as plain text in the terminal"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-news = "news_cli.cli:main"
+cli-news = "news_cli.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/news_cli"]

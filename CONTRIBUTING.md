@@ -13,8 +13,8 @@ Thank you for helping improve **news-cli**. Keep changes focused and easy to rev
   ```
 3. Run the CLI:
   ```bash
-   news --list-sources
-   news techcrunch "test"
+   cli-news --list-sources
+   cli-news techcrunch "test"
    PYTHONPATH=src python -m news_cli -s hn "openai"
    PYTHONPATH=src python -m news_cli -s venturebeat "ai"
   ```

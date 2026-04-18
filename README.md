@@ -2,35 +2,35 @@
 
 A small **open-source command-line tool** to search tech news sources and read articles as **plain text** in your terminal.
 
-**Sources are added over time.** The list below is a snapshot—run `news --list-sources` anytime to see what your installed version supports, and see [ROADMAP.md](ROADMAP.md) for how we plan to grow coverage.
+**Sources are added over time.** The list below is a snapshot—run `cli-news --list-sources` anytime to see what your installed version supports, and see [ROADMAP.md](ROADMAP.md) for how we plan to grow coverage.
 
 ## Choosing and searching a source
 
 Every search uses **one** backend at a time:
 
 
-| Flag                  | Meaning                                                                 |
-| --------------------- | ----------------------------------------------------------------------- |
-| `**--source` / `-s`** | Which site to search (default: `**techcrunch`**).                       |
-| `**--list-sources**`  | Print all built-in source ids, display names, and home URLs, then exit. |
+| Flag | Meaning |
+|------|---------|
+| **`--source` / `-s`** | Which site to search (default: **`techcrunch`**). |
+| **`--list-sources`** | Print all built-in source ids, display names, and home URLs, then exit. |
 
 
 Examples:
 
 ```bash
-news --list-sources
-news "sam altman"                         # default source: techcrunch
-news -s techcrunch "openai"
-news -s hn "openai chatgpt"               # HN: all words must appear in the story title
-news -s venturebeat "salesforce"
-news --source venturebeat "agents" --limit 10
+cli-news --list-sources
+cli-news "sam altman"                         # default source: techcrunch
+cli-news -s techcrunch "openai"
+cli-news -s hn "openai chatgpt"               # HN: all words must appear in the story title
+cli-news -s venturebeat "salesforce"
+cli-news --source venturebeat "agents" --limit 10
 python -m news_cli -s hn "rust"
 ```
 
 Other flags:
 
-- `**--limit**`: max results (default: 20).
-- `**--json**`: pretty JSON on stdout (uses `**jq**` when available), then the interactive article picker (list + prompts on stderr).
+- **`--limit`**: max results (default: 20).
+- **`--json`**: pretty JSON on stdout (uses **`jq`** when available), then the interactive article picker (list + prompts on stderr).
 
 ## Supported sources (current)
 
@@ -47,7 +47,7 @@ Article text is extracted with **trafilatura** from each result URL (HN often li
 ## Requirements
 
 - **Python 3.11+**
-- Optional: `**jq`** for colored JSON with `--json`.
+- Optional: **`jq`** for colored JSON with `--json`.
 
 ## Install (from clone)
 
@@ -58,7 +58,7 @@ source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
-This installs the `**news**` command.
+This installs the **`cli-news`** command.
 
 ## Project layout
 
